@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="email">Entrer votre adresse email : </label>
+        <input type="text" placeholder="email" id="email">
+        <input type="button" value="envoyer" onclick="afficher()">
+    </form>
+
+    <script>
+        function afficher(){
+            let email = document.getElementById('email').value;
+            i=0;
+            while(email[i]!= '@'){i++;}
+            let PartHidden=email.slice(0,i);
+            let PartAffiche=email.slice(i,email.length)
+            PartHidden=PartHidden[0]+"...";  
+            let email1 = PartHidden+PartAffiche;          
+            document.write(email1);   }               
+    </script>
+
+</body>
+</html>

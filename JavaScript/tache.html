@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <div id="partie1">
+    <label for="jour">Choisissez le jour</label>
+    <select name="jour" id="jour">  
+            <option value="lundi">lundi</option>
+            <option value="mardi">mardi</option>
+            <option value="mercredi">mercredi</option>
+            <option value="jeudi">jeudi</option>
+            <option value="vendredi">vendredi</option>
+            <option value="samedi">samedi</option>
+            <option value="dimanche">dimanche</option>    
+    </select>
+    <input type="button" value="effectuer" onclick="tache()">
+    </div>
+    <p id="para"></p>
+    <div id="txt" style="display:none" >
+    <textarea  placeholder="Entrer les taches vous voulez faire" id="tacheAFaire" cols="30" rows="10" ></textarea>
+    <input type="button" value="envoyer" onclick="splitTache()">
+    </div>
+    <script>
+         function changeStyle(){
+            let element = document.getElementById("partie1");
+                 element.style.display = "none";
+            let text = document.getElementById("txt");
+                 text.style.display = "block";     
+                }
+        function tache() {
+         changeStyle();
+
+            let jour=document.getElementById('jour').value;  
+            document.getElementById("demo").innerHTML = "on est le "+jour;
+            paritie1.style.visibility = 'hidden';
+                        }
+        function splitTache(){
+            let tache1=[];
+            let tache=document.getElementById('tacheAFaire').value;
+            tache1=tache.split(',');
+            for (let index = 0; index < tache1.length; index++) {
+                document.write("</br> tache N " + (index+1) + " : " + tache1[index]);   
+            }
+            }
+        </script>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--<input type="button" value="lundi" onclick="Javascript:window.document.location.href='tache2.html'
+                                                tache(lundi)">
+    <input type="button" value="mardi" onclick="tache('mardi')">
+    <input type="button" value="mercredi" onclick="tache('mercredi')">
+    <input type="button" value="jeudi"  onclick="tache('jeudi')">
+    <input type="button" value="vendredi" onclick="tache('vendredi')">
+    <input type="button" value="samedi" onclick="tache('samedi')">
+    <input type="button" value="dimanche" onclick="tache('dimanche')">
+    </form>-->

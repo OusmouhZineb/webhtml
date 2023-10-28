@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Entrer le montant en MAD : </label>
+        <input type="number" title="montant" id="montant"><br>
+        <input type="submit" value="convertir" onclick=" var a=parseFloat(document.getElementById('montant').value);
+                                                        document.write(convertir(a) + 'usd');">
+        
+            
+        
+    </form>
+<script>
+            
+            function convertir(a){
+                return a*10.2;
+}</script>
+</body>
+</html>

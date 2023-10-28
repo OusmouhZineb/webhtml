@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        vous etes pres a gagner
+    </h1>
+    <button onclick="jouer()">Jouer</button>
+
+
+    <script>
+        function jouer(){
+            let t=[0,0,0];
+            for(let i = 0;i<3;i++){
+                    t[i]=Math.floor(Math.random() * 10);
+                          
+            }
+            for(let i = 0;i<3;i++){
+                    
+                    document.write(" nombre " + (i+1) + " : " + t[i]+"</br>" );       
+            }
+            if(t[0]==t[1]&&t[1]==t[2])
+            {alert("vous avez gagne");
+            }
+            else alert("vous  avez perdu");
+        }
+    </script>
+</body>
+</html>

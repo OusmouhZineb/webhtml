@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Entrer nom : </label>
+        <input type="String" title="nom" id="nom"><br>
+        <label for="">Entrer votre Adress : </label>
+        <input type="String" title="adresse" id="adresse"><br>
+        <label for="">Entrer votre ville : </label>
+        <input type="String" title="ville" id="ville"><br>
+        <input type="submit" value="envoyer" onclick="bienvennu()">
+        
+        
+        
+        
+        <script>
+            function bienvennu(){
+    
+                let client={ nom: document.getElementById('nom').value ,
+                            adresse:document.getElementById('adresse').value,
+                            ville:document.getElementById('ville').value };
+                
+                alert(" Bienvennu " +client.nom);
+                document.write("le nom : "+ client.nom + "<br/> Adresse : " + client.adresse +"," +client.ville);}
+                                    
+        </script>
+        
+    </form>
+
+</body>
+</html>

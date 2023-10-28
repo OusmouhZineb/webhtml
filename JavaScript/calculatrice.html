@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatrice</title>
+</head>
+<body>
+    <form action="">
+    <input type="text" placeholder="entrer le 1er nombre" id="num1">
+    <input type="text" placeholder="entrer le 1er nombre" id="num2">
+    <label for="calc">operation</label>
+    <select name="calc" id="calc">
+        <option value="">--operation--</option>
+        <option value="+">addition</option>
+        <option value="-">substraction</option>
+        <option value="/">division</option>
+        <option value="*">multiplication</option>
+      </select>
+
+    <input type="button" value="submit" id="" onclick="calculatrice()">  
+    </form>
+    
+    
+        <script>
+            function calculatrice(){
+                let a=parseFloat(document.getElementById('num1').value);
+                let b=parseFloat(document.getElementById('num2').value);
+                let op=document.getElementById("calc").value;
+               
+                let r;
+                switch(op){
+                    case '+':
+                        r=a+b;
+                        break;
+                    case '-':
+                        r=a-b;
+                        break;
+                    case '/':
+                        r=a/b;
+                        break;
+                    case '*':
+                        r=a*b;
+                        break;                       
+                            }
+                document.write(r);
+            }
+        </script>
+</body>
+</html>

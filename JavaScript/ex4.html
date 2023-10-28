@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+            
+           
+    </script>
+    <form action="">
+        <label for="">Entrer le nom : </label>
+        <input type="text" title="nom" id="nom"><br>
+        <label for="">Entrer la note de math : </label>
+        <input type="number" title="math" id="math"><br>
+        <label for="">Entrer la note du physique : </label>
+        <input type="number" title="pc" id="pc"><br>
+        <label for="">Entrer la note de svt : </label>
+        <input type="number" title="svt" id="svt"><br>
+        <input type="submit" value="calculer la moyenne" onclick="moynne()">
+    </form>
+    <script>
+        
+
+        function moynne(){
+
+            let etudiant={ nom:document.getElementById('nom').value ,math:parseFloat(document.getElementById('math').value),
+           pc:parseFloat(document.getElementById('pc').value),
+            svt:parseFloat(document.getElementById('svt').value) };
+            let m = etudiant.math + etudiant.pc + etudiant.svt;
+            m=m/3;
+            document.write("la moyenne de l'etudiant ",etudiant.nom, " est ", m);
+        }
+    </script>
+       
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        
+        let e1={nom:'ousmouh',prenom:'zineb',note:[17,14,16]}
+        let e2={nom:'benfraj',prenom:'khawla',note:[19,13,16]}
+        let e3={nom:'bouzidi',prenom:'khawla',note:[18,19,20]}
+        let etudiants=[e1,e2,e3];
+            function afficher(index){
+            let e=etudiants[index];
+            document.getElementById("demo").innerHTML ="le nom : "+
+            e.nom + "</br> le prenom : " + e.prenom + "</br> note : " + e.note;}
+           
+            
+        
+    </script>
+</body>
+</html>

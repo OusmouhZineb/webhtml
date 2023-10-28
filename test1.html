@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+
+  <body >
+    <img src ="vert.jpg" id="vert" width="310" height="392" style="position: absolute; top:92px; left:375px; visibility:hidden"/>
+    <img src ="roug.jpg" id="rouge" alt="" style="visibility: hidden;" />
+    <script type="text/javascript">
+      function afficherrouge() {
+        document.getElementById('vert').style.visibility='visible';
+        document.getElementById('rouge').style.visibility='hidden';
+      }
+      function affichervert() {
+        document.getElementById('rouge').style.visibility='visible';
+        document.getElementById('vert').style.visibility='hidden';
+
+      }
+    </script>
+    <button onclick="affichervert()">start</button>
+    <button onclick="afficherrouge()">close</button>
+</body>
+</html>

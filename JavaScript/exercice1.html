@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <label for="">Entrer le 1er nombre a : </label>
+        <input type="String" title="num1" id="num1"><br>
+        <label for="">Entrer le 1er nombre b : </label>
+        <input type="String" title="num2" id="num2"><br>
+        
+        <input type="submit" value="addition" class="op"
+            onclick="
+                    var a=parseFloat(document.getElementById('num1').value);
+                    var b=parseFloat(document.getElementById('num2').value); 
+                    var r=a+b;
+                    document.write(r);"
+           
+            >
+        <br>
+        <button oncl>xx</button>
+        <input type="submit" value="multiplication" onclick="multiplication()"
+        ><br>
+        <input type="submit" value="division" onclick="division()"><br>
+        <input type="submit" value="comparaison" onclick="comparaison()"><br>
+        <input type="submit" value="expo" onclick="expo()"><br>
+    </form>
+    
+</body>
+</html>
